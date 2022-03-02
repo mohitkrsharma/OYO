@@ -115,8 +115,12 @@ select::seletion {
   height: 100%;
   width: 100%;
 }
-.hotel-description-div {
-  width: 75%;
+.hotel-description-div,
+.hotels-list-div,
+.social-icons-div {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .search-hotel-div {
   display: grid;
@@ -140,6 +144,8 @@ select::seletion {
   width: 100%;
   height: 3rem;
   border-radius: 0;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
 }
 .room-guest-div {
   width: 100%;
@@ -278,6 +284,7 @@ li {
   grid-template-columns: repeat(2, 1fr); */
   display: flex;
   gap: 1.5rem;
+  padding: 1.5rem 3rem;
 }
 .total-countries,
 .total-hotels-homes {
@@ -288,13 +295,249 @@ li {
 }
 .parallelogram-div-1,
 .parallelogram-div-2 {
-  transform: skewX(-10deg); /* parallelogram gram div tilted at -10degress */
-  padding: 0.5rem 0.5rem;
+  transform: skewX(-25deg); /* parallelogram gram div tilted at -10degress */
+  padding: 1rem 1rem;
 }
 .parallelogram-div-1 {
   border-right: 0.15rem solid #cdcecf;
 }
+.parallelogram-div-1 .total-countries {
+  transform: skewX(0deg);
+}
+.parallelogram-div-1 .countries {
+  transform: skewX(0deg);
+}
+
 .countries,
 .hotels-homes {
   color: #707071;
+}
+.ind-chi-mal,
+.nep-indo-uae {
+  padding: 0.25rem 0.25rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.ind-chi-mal li {
+  list-style: none;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  padding: 0.1rem 0.1rem;
+  margin-top: 2rem;
+}
+.nep-indo-uae li {
+  list-style: none;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  padding: 0.1rem 0.1rem;
+  margin-top: 2rem;
+}
+.ind-chi-mal li::before {
+  content: "•";
+  font-size: 1rem;
+}
+.nep-indo-uae li::before {
+  content: "•";
+  font-size: 1rem;
+}
+.ind-chi-mal li span {
+  margin-left: 0.5rem;
+}
+.nep-indo-uae li span {
+  margin-left: 0.5rem;
+}
+.ind-chi-mal .india-bullet::before {
+  color: #1ab64f;
+}
+.ind-chi-mal .china-bullet::before {
+  color: #ff7f7b;
+}
+.ind-chi-mal .malaysia-bullet::before {
+  color: #f5a623;
+}
+.nep-indo-uae .nepal-bullet::before {
+  color: #5fd6f2;
+}
+.nep-indo-uae .indonesia-bullet::before {
+  color: #fe94f1;
+}
+.nep-indo-uae .uae-bullet::before {
+  color: #7e89e4;
+}
+.footer-section {
+  background-color: #6d787d;
+}
+.sub-header-footer {
+  /* display: grid; */
+  display: flex;
+  /* grid-template-columns: repeat(4, 1fr); */
+  background-color: #6d787d;
+  padding: 1rem 2rem;
+  gap: 1.5rem;
+  align-items: center;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.oyo-footer-logo {
+  width: 9rem;
+  height: 2.8rem;
+}
+.leading-chain,
+.join-network {
+  font-weight: 700;
+  color: #fff;
+  font-size: 1rem !important;
+  font-family: "Open Sans", sans-serif;
+}
+.buildings {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.property-text {
+  margin-left: 1rem;
+}
+.footer-mid-content-div {
+  background-color: #6d787d;
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+  display: flex;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  margin-top: 1.25rem;
+}
+.exciting-offer {
+  font-size: 1rem;
+  color: #fff;
+  /* text-align: left; */
+}
+.property-button,
+.about-us-list-div,
+.terms-condition-list-div {
+  display: flex;
+}
+.about-us-list-div,
+.terms-condition-list-div {
+  gap: 1rem;
+}
+.buttons-div {
+  display: flex;
+  gap: 1rem;
+}
+.apple-android-div {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  background-color: #000;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.9rem;
+}
+i {
+  font-size: 1.75rem;
+  color: #fff;
+}
+.google-play {
+  height: 1.75rem;
+  width: 1.75rem;
+}
+.about-us-list-div ul li {
+  list-style: none;
+}
+.terms-condition-list-div ul li {
+  list-style: none;
+}
+.play-store,
+.app-store {
+  font-size: 0.8rem;
+}
+.play-store,
+.download,
+.app-store,
+.about-us-list-div,
+.terms-condition-list-div ul li {
+  color: #fff;
+}
+.play-store {
+  display: flex;
+  gap: 0.5rem;
+}
+.app-text,
+.store-text,
+.google-text,
+.play-text {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.main-content-div {
+  margin-top: 1rem;
+}
+.exciting-offer-div {
+  padding: 1rem 0;
+}
+.offers-div,
+.about-us-div {
+  border-right: 1px solid #fff;
+  padding: 0 2rem;
+}
+.terms-conditions-div {
+  padding-left: 2rem;
+}
+.first-hr,
+.second-hr,
+.third-hr {
+  color: #fff;
+}
+.second-hr,
+.third-hr {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+}
+.oyo-hotel-heading {
+  padding: 1rem 0;
+  font-weight: 600;
+  color: #fff;
+}
+.list-cities {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.city-list-1,
+.city-list-2,
+.city-list-3,
+.city-list-4,
+.city-list-5,
+.city-list-6 li {
+  list-style: none;
+  color: #fff;
+}
+.strong-li {
+  font-weight: 500;
+}
+.social-media-icons-div {
+  margin-top: 2rem;
+}
+.facebook {
+  padding: 1rem;
+  border-radius: 9.9rem;
+  border: 1px solid #fff;
+}
+.social-icons-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.year-span {
+  color: #fff;
+}
+.author {
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  opacity: 0.5;
 }
