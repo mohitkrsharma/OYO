@@ -56,6 +56,9 @@ svg {
 .language-dropdown {
   border: none !important;
 }
+::ng-deep .language-dropdown {
+  background-color: #fff;
+}
 .city-dropdown {
   border: none !important;
   font-weight: 500;
