@@ -73,7 +73,7 @@ select {
   font-weight: 700;
   width: 8.5rem;
 }
-select::seletion {
+select::selection {
   color: #fff;
   background: #fff !important;
   border: 0px;
